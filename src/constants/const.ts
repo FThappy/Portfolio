@@ -2,12 +2,12 @@ export const mySocials = [
   {
     name: 'Linkedin',
     href: 'https://www.linkedin.com/in/chu-quang-th%E1%BA%AFng-b1995a286/',
-    icon: '/assets/linkedIn.png'
+    icon: '/Portfolio/assets/linkedIn.png'
   },
   {
     name: 'Gmail',
     href: 'chuthang766@gmail.com',
-    icon: '/assets/gmail.png'
+    icon: '/Portfolio/assets/gmail.png'
   }
 ];
 export const experiences = [

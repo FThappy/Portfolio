@@ -128,4 +128,4 @@ export function Astronaut(props: Props) {
   );
 }
 
-useGLTF.preload('/models/tenhun_falling_spaceman_fanart.glb');
+useGLTF.preload('/Portfolio/models/tenhun_falling_spaceman_fanart.glb');
