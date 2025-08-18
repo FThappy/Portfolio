@@ -11,9 +11,9 @@ const Projects = () => {
     x.set(e.clientX + 20);
     y.set(e.clientY + 20);
   };
-  const [preview, setPreview] = useState(null);
+  const [preview, setPreview] = useState<string | null>(null);
   return (
-    <section onMouseMove={handleMouseMove} className='relative c-space section-spacing'>
+    <section id='project' onMouseMove={handleMouseMove} className='relative c-space section-spacing'>
       <h2 className='text-heading'>My Selected Projects</h2>
       <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full' />
       {myProjects.map(project => (

@@ -2,22 +2,22 @@ import { useState } from 'react';
 import { LayoutGroup, motion } from 'motion/react';
 const tabs = [
   {
-    descreption : "Home",
-    title : ""
+    descreption: 'Home',
+    title: ''
   },
-    {
-    descreption : "About",
-    title : "about"
+  {
+    descreption: 'About',
+    title: 'about'
   },
-    {
-    descreption : "Work",
-    title : "work"
+  {
+    descreption: 'Project',
+    title: 'project'
   },
-    {
-    descreption : "Contact",
-    title : "contact"
+  {
+    descreption: 'Contact',
+    title: 'contact'
   }
-]
+];
 
 const underline: React.CSSProperties = {
   position: 'absolute',

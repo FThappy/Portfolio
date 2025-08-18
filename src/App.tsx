@@ -1,9 +1,11 @@
 import './App.css';
 import About from './pages/About';
+import Contact from './pages/Contact';
 import Experiences from './pages/Experiences';
 import Footer from './pages/Footer';
 import Hero from './pages/Hero';
 import Navbar from './pages/NavBar';
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Hero />
       <About />
       <Experiences />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   );

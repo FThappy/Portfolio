@@ -1,5 +1,18 @@
 import { motion } from 'motion/react';
-const ProjectDetails = ({ title, description, subDescription, image, tags, href, closeModal }) => {
+type Props = {
+  title: string;
+  description: string;
+  subDescription: string[];
+  href: string;
+  image: string;
+  tags: {
+    id: number;
+    name: string;
+    path: string;
+  }[];
+  closeModal : ()=> void;
+};
+const ProjectDetails = ({ title, description, subDescription, image, tags, href, closeModal }: Props) => {
   return (
     <div className='fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm'>
       <motion.div
@@ -14,7 +27,7 @@ const ProjectDetails = ({ title, description, subDescription, image, tags, href,
         <div className='p-5'>
           <h5 className='mb-2 text-2xl font-bold text-white'>{title}</h5>
           <p className='mb-3 font-normal text-neutral-400'>{description}</p>
-          {subDescription.map((subDesc, index) => (
+          {subDescription.map((subDesc) => (
             <p className='mb-3 font-normal text-neutral-400'>{subDesc}</p>
           ))}
           <div className='flex items-center justify-between mt-4'>
@@ -24,7 +37,7 @@ const ProjectDetails = ({ title, description, subDescription, image, tags, href,
               ))}
             </div>
             <a className='inline-flex items-center gap-1 font-medium cursor-pointer hover-animation'>
-              View Project <img src='assets/arrow-up.svg' className='size-4' href={href} />
+              View Project <img src='assets/arrow-up.svg' className='size-4' />
             </a>
           </div>
         </div>

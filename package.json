@@ -14,6 +14,9 @@
     "format:write": "prettier --write  \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.1",
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
     "@react-three/drei": "^10.7.2",
     "@react-three/fiber": "^9.3.0",
     "@tailwindcss/vite": "^4.1.12",
@@ -27,10 +30,12 @@
     "motion": "^12.23.12",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-hook-form": "^7.62.0",
     "react-responsive": "^10.0.1",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.12",
-    "three": "^0.179.1"
+    "three": "^0.179.1",
+    "zod": "^4.0.17"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",

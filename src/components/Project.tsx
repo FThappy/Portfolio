@@ -1,7 +1,20 @@
 import React, { useState } from 'react';
 import ProjectDetails from './ProjectDetails';
-
-const Project = ({ title, description, subDescription, href, image, tags, setPreview }) => {
+import { ArrowRight } from 'lucide-react';
+type Props = {
+  title: string;
+  description: string;
+  subDescription: string[];
+  href: string;
+  image: string;
+  tags: {
+    id: number;
+    name: string;
+    path: string;
+  }[];
+  setPreview: React.Dispatch<React.SetStateAction<string | null>>;
+};
+const Project = ({ title, description, subDescription, href, image, tags, setPreview }: Props) => {
   const [isHidden, setIsHidden] = useState(false);
   return (
     <>
@@ -20,7 +33,7 @@ const Project = ({ title, description, subDescription, href, image, tags, setPre
         </div>
         <button onClick={() => setIsHidden(true)} className='flex items-center gap-1 cursor-pointer hover-animation'>
           Read More
-          <img src='assets/arrow-right.svg' className='w-5' />
+          <ArrowRight className='w-5 h-5' />
         </button>
       </div>
       <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full' />

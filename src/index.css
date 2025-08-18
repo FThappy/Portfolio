@@ -48,6 +48,7 @@
   --color-mint: #57db96;
   --color-royal: #5c33cc;
   --color-lavender: #7a57db;
+  --color-purple-primary: #030412;
   --color-fuchsia: #ca2f8c;
   --color-orange: #cc6033;
   --color-sand: #d6995c;
@@ -222,6 +223,44 @@
   }
   .grid-black-color {
     @apply p-6 bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] rounded-2xl;
+  }
+    .scroll-beutifull::-webkit-scrollbar {
+    height: 3px;
+    width: 3px;
+  }
+  .scroll-beutifull::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #dfe9eb;
+  }
+
+  .scroll-beutifull::-webkit-scrollbar-track:hover {
+    background-color: #b8c0c2;
+  }
+
+  .scroll-beutifull::-webkit-scrollbar-track:active {
+    background-color: #b8c0c2;
+  }
+
+  .scroll-beutifull::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #cc522b;
+  }
+
+  .scroll-beutifull::-webkit-scrollbar-thumb:hover {
+    background-color: #ff6636;
+  }
+
+  .scroll-beutifull::-webkit-scrollbar-thumb:active {
+    background-color: #ff6636;
+  }
+    .un-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .un-scroll {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
 
