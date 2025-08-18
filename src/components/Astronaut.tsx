@@ -14,13 +14,13 @@ import type { Group } from 'three';
 import * as THREE from 'three';
 
 type Props = {
-    scale? : number;
-    position? : [number, number, number]
-}
+  scale?: number;
+  position?: [number, number, number];
+};
 
-export function Astronaut(props : Props) {
+export function Astronaut(props: Props) {
   const group = useRef<Group>(null!);
-  const { nodes, materials, animations } = useGLTF('/models/tenhun_falling_spaceman_fanart.glb');
+  const { nodes, materials, animations } = useGLTF('/Portfolio/models/tenhun_falling_spaceman_fanart.glb');
   const { actions } = useAnimations(animations, group);
   useEffect(() => {
     if (animations.length > 0) {
