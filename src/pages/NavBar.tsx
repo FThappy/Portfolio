@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { LayoutGroup, motion } from 'motion/react';
+import { Squash as Hamburger } from 'hamburger-react';
+
 const tabs = [
   {
     descreption: 'Home',
@@ -61,10 +63,9 @@ const Navbar = () => {
             <p className='text-xl font-bold transition-colors text-neutral-400 hover:text-white'>ThangChu</p>
           </a>
           <button
-            onClick={() => setIsOpen(!isOpen)}
             className='flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden'
           >
-            <img src={isOpen ? 'assets/close.svg' : 'assets/menu.svg'} className='w-6 h-6' alt='toggle' />
+            <Hamburger size={24} toggled={isOpen} toggle={setIsOpen} />
           </button>
           <nav className='hidden sm:flex'>
             <Navigation />
