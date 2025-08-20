@@ -5,11 +5,15 @@ import { Squash as Hamburger } from 'hamburger-react';
 const tabs = [
   {
     descreption: 'Home',
-    title: ''
+    title: 'home'
   },
   {
     descreption: 'About',
     title: 'about'
+  },
+  {
+    descreption: 'Education',
+    title: 'education'
   },
   {
     descreption: 'Project',
@@ -35,18 +39,17 @@ function Navigation() {
     <LayoutGroup>
       <ul className='nav-ul'>
         {tabs.map(item => (
-          <motion.li
+          <motion.a
             key={item.descreption}
+            href={`#${item.title}`}
             initial={false}
             className='nav-li px-2'
             onClick={() => setSelectedTab(item.title)}
             style={{ position: 'relative' }}
           >
-            <a href={`#${item.title}`} className='nav-link cursor-pointer'>
-              {item.descreption}
-            </a>
+            <span className='nav-link cursor-pointer'>{item.descreption}</span>
             {item.title === selectedTab && <motion.div style={underline} layoutId='underline' />}
-          </motion.li>
+          </motion.a>
         ))}
       </ul>
     </LayoutGroup>
