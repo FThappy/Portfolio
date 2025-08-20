@@ -47,217 +47,194 @@ export const experiences = [
 export const myProjects = [
   {
     id: 1,
-    title: 'Social Charities',
-    description: 'A secure authentication and authorization system using Auth0 for seamless user management.',
+    title: 'Educraft (Job Remote)',
+    description:
+      'Designed and developed an online exam preparation platform for English certifications (IELTS, TOEIC), supporting all test modules: Writing, Reading, Listening, Speaking, and mixed-mode practice.',
     subDescription: [
-      'Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.',
-      'Implemented role-based access control (RBAC) for fine-grained user permissions.',
-      'Developed a React-based frontend with Tailwind CSS for a sleek user experience.',
-      'Connected to a secure SQLite database for user data storage.'
+      'Implemented advanced features such as vocabulary highlighting, performance analytics, test history tracking, and detailed result breakdowns for students.',
+      'Built an admin dashboard with functionalities for creating and managing exams, handling users and courses, and generating statistical and analytical reports on student performance.',
+      'Integrated role-based access control (RBAC) to ensure secure and fine-grained permissions for students, teachers, and administrators.',
+      'Containerized the application using Docker and automated deployment pipelines with GitLab CI/CD for seamless integration and scalable delivery.'
     ],
-    href: '',
-    logo: '',
-    image: '/Portfolio/assets/charity1.png',
+    href: 'https://educraft.icsvietnam.com/vi-VN/',
+    image: '/Portfolio/assets/educraft.png',
     tags: [
       {
         id: 1,
-        name: 'C#',
+        name: 'Nextjs',
         path: '/Portfolio/assets/nextjs.svg'
       },
       {
         id: 2,
-        name: '.Net',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'Spring',
+        path: '/Portfolio/assets/spring.svg'
       },
       {
         id: 3,
-        name: 'Ef Core',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'MySQL',
+        path: '/Portfolio/assets/mysql.svg'
       },
       {
         id: 4,
         name: 'TailwindCSS',
-        path: '/Portfolio/assets/nextjs.svg'
+        path: '/Portfolio/assets/tailwindcss.svg'
+      },
+      {
+        id: 5,
+        name: 'Vitejs',
+        path: '/Portfolio/assets/vitejs.svg'
+      },
+      {
+        id: 6,
+        name: 'Docker',
+        path: '/Portfolio/assets/docker.svg'
       }
     ]
   },
   {
     id: 2,
     title: 'Social Charities',
-    description: 'A secure authentication and authorization system using Auth0 for seamless user management.',
+    description:
+      'Developed a modern social networking platform for charity and volunteering, featuring real-time interaction, donation management, and event participation with seamless ZaloPay integration.',
     subDescription: [
-      'Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.',
-      'Implemented role-based access control (RBAC) for fine-grained user permissions.',
-      'Developed a React-based frontend with Tailwind CSS for a sleek user experience.',
-      'Connected to a secure SQLite database for user data storage.'
+      'Implemented authentication and user profile management with JWT, including privacy settings and avatar customization.',
+      'Built core functionalities for creating and managing charity projects and events, with progress tracking, updates, and volunteer participation.',
+      'Developed interactive social features including news feed, posts, likes, shares, comments, friend requests, and real-time chat using Firebase Firestore.',
+      'Integrated donation system with ZaloPay API, providing intuitive donation flow, transaction history, and confirmation.',
+      'Enabled real-time updates for chat, notifications, friend requests, donations, and event participation via Firebase and WebSockets.',
+      'Containerized the frontend using Docker and optimized for SEO and performance with Next.js 14 (App Router + Server Actions).'
     ],
-    href: '',
-    logo: '',
+    href: 'https://datn-fe-3xyo.onrender.com',
     image: '/Portfolio/assets/charity1.png',
     tags: [
       {
         id: 1,
-        name: 'C#',
+        name: 'Next.js',
         path: '/Portfolio/assets/nextjs.svg'
       },
       {
         id: 2,
-        name: '.Net',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'Nodejs',
+        path: '/Portfolio/assets/node.svg'
       },
       {
         id: 3,
-        name: 'Ef Core',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'MongoDB',
+        path: '/Portfolio/assets/mongo.svg'
       },
       {
         id: 4,
         name: 'TailwindCSS',
-        path: '/Portfolio/assets/nextjs.svg'
+        path: '/Portfolio/assets/tailwindcss.svg'
       }
     ]
   },
   {
     id: 3,
-    title: 'Social Charities',
-    description: 'A secure authentication and authorization system using Auth0 for seamless user management.',
+    title: 'Social Charities App',
+    description:
+      'Built a cross-platform mobile application using React Native for managing charity projects, user accounts, and donation activities.',
     subDescription: [
-      'Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.',
-      'Implemented role-based access control (RBAC) for fine-grained user permissions.',
-      'Developed a React-based frontend with Tailwind CSS for a sleek user experience.',
-      'Connected to a secure SQLite database for user data storage.'
+      'Developed features for creating, updating, and tracking charity projects directly within the mobile app.',
+      'Implemented user management including registration, authentication, profile customization, and role-based access control (RBAC).',
+      'Integrated donation system with secure payment flow and transaction history for transparency.',
+      'Designed an intuitive mobile UI/UX optimized for both iOS and Android devices, ensuring seamless user experience.'
     ],
     href: '',
-    logo: '',
-    image: '/Portfolio/assets/charity1.png',
+    image: '/Portfolio/assets/social_app.png',
     tags: [
       {
         id: 1,
-        name: 'C#',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'React Native',
+        path: '/Portfolio/assets/react.svg'
       },
       {
         id: 2,
-        name: '.Net',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'Nodejs',
+        path: '/Portfolio/assets/node.svg'
       },
       {
         id: 3,
-        name: 'Ef Core',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'MongoDB',
+        path: '/Portfolio/assets/mongo.svg'
       },
       {
         id: 4,
-        name: 'TailwindCSS',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'Firebase',
+        path: '/Portfolio/assets/firebase.png'
       }
     ]
   },
   {
     id: 4,
-    title: 'Social Charities',
-    description: 'A secure authentication and authorization system using Auth0 for seamless user management.',
+    title: 'Panda Shop',
+    description:
+      'Developed a full-featured Ecommerce web application using React, providing a modern storefront, secure checkout, and an integrated admin dashboard for ecommerce management.',
     subDescription: [
-      'Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.',
-      'Implemented role-based access control (RBAC) for fine-grained user permissions.',
-      'Developed a React-based frontend with Tailwind CSS for a sleek user experience.',
-      'Connected to a secure SQLite database for user data storage.'
+      'Implemented core shopping features including homepage banners, product listings with filters & search, product detail pages, shopping cart with persistent storage, and secure checkout flow.',
+      'Built user authentication system with login, registration, profile management, and order history tracking.',
+      'Developed an admin dashboard with revenue statistics, user management, product CRUD operations with Firebase Storage integration, and transaction monitoring.',
+      'Added advanced CMS functionalities such as banner management and customer feedback handling to support business operations.',
+      'Utilized Redux Toolkit for state management, React Router for navigation, and integrated Recharts for real-time analytics and reporting.'
     ],
-    href: '',
-    logo: '',
-    image: '/Portfolio/assets/charity1.png',
+    href: 'https://e-commerceclient-4as8.onrender.com',
+    image: '/Portfolio/assets/ecomerce.png',
     tags: [
       {
         id: 1,
-        name: 'C#',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'Reactjs',
+        path: '/Portfolio/assets/react.svg'
       },
       {
         id: 2,
-        name: '.Net',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'Nodejs',
+        path: '/Portfolio/assets/node.svg'
       },
       {
         id: 3,
-        name: 'Ef Core',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'MongoDB',
+        path: '/Portfolio/assets/mongo.svg'
       },
       {
         id: 4,
-        name: 'TailwindCSS',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'Firebase',
+        path: '/Portfolio/assets/firebase.svg'
       }
     ]
   },
   {
     id: 5,
-    title: 'Social Charities',
-    description: 'A secure authentication and authorization system using Auth0 for seamless user management.',
+    title: 'Admin Dashboard',
+    description:
+      'Developed a React-based CMS dashboard for ecommerce management, enabling administrators to analyze performance and manage users, products, transactions, banners, and feedback in a centralized system.',
     subDescription: [
-      'Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.',
-      'Implemented role-based access control (RBAC) for fine-grained user permissions.',
-      'Developed a React-based frontend with Tailwind CSS for a sleek user experience.',
-      'Connected to a secure SQLite database for user data storage.'
+      'Implemented interactive analytics dashboard with revenue tracking, growth statistics, product sales, new user registrations, and latest transactions using Chart.js.',
+      'Built management modules for users, products (CRUD with Firebase Storage integration), transactions, banners, and customer feedback.',
+      'Designed a responsive and intuitive UI with Material UI and React Router for seamless navigation.',
+      'Integrated secure image storage with Firebase and API communication via Axios for smooth data handling.'
     ],
     href: '',
-    logo: '',
-    image: '/Portfolio/assets/charity1.png',
+    image: '/Portfolio/assets/admin.png',
     tags: [
       {
         id: 1,
-        name: 'C#',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'Reactjs',
+        path: '/Portfolio/assets/react.svg'
       },
       {
         id: 2,
-        name: '.Net',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'Nodejs',
+        path: '/Portfolio/assets/node.svg'
       },
       {
         id: 3,
-        name: 'Ef Core',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'MongoDB',
+        path: '/Portfolio/assets/mongo.svg'
       },
       {
         id: 4,
-        name: 'TailwindCSS',
-        path: '/Portfolio/assets/nextjs.svg'
-      }
-    ]
-  },
-  {
-    id: 6,
-    title: 'Social Charities',
-    description: 'A secure authentication and authorization system using Auth0 for seamless user management.',
-    subDescription: [
-      'Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.',
-      'Implemented role-based access control (RBAC) for fine-grained user permissions.',
-      'Developed a React-based frontend with Tailwind CSS for a sleek user experience.',
-      'Connected to a secure SQLite database for user data storage.'
-    ],
-    href: '',
-    logo: '',
-    image: '/Portfolio/assets/charity1.png',
-    tags: [
-      {
-        id: 1,
-        name: 'C#',
-        path: '/Portfolio/assets/nextjs.svg'
-      },
-      {
-        id: 2,
-        name: '.Net',
-        path: '/Portfolio/assets/nextjs.svg'
-      },
-      {
-        id: 3,
-        name: 'Ef Core',
-        path: '/Portfolio/assets/nextjs.svg'
-      },
-      {
-        id: 4,
-        name: 'TailwindCSS',
-        path: '/Portfolio/assets/nextjs.svg'
+        name: 'Firebase',
+        path: '/Portfolio/assets/firebase.svg'
       }
     ]
   }

@@ -2,14 +2,16 @@ import { Particles } from '@/components/Particles';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-
+import emailjs from '@emailjs/browser';
 import { Button } from '@/components/ui/button';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { checkValidGmail } from '@/lib/utils';
 import { Textarea } from '@/components/ui/textarea';
+import { useState } from 'react';
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const formSchema = z.object({
     name: z.string().min(2, {
       message: 'Username must be at least 2 characters.'
@@ -38,8 +40,28 @@ const Contact = () => {
     }
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsLoading(true);
+
+    try {
+      await emailjs.send(
+        'service_0rldynj',
+        'template_nx16bti',
+        {
+          from_name: values.name,
+          to_name: 'Thangchu',
+          from_email: values.email,
+          to_email: 'chuthang766@gmail.com',
+          message: values.message
+        },
+        'BJ99hjmylxCC2JiHs'
+      );
+      setIsLoading(false);
+      form.reset({ name: '', email: '', message: '' });
+    } catch (error) {
+      setIsLoading(false);
+      console.log(error);
+    }
   }
   return (
     <section id='contact' className='relative flex items-center c-space section-spacing'>
@@ -112,7 +134,7 @@ const Contact = () => {
                 </FormItem>
               )}
             />
-            <Button type="submit"
+            <Button disabled={isLoading} type="submit"
             className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation">Submit</Button>
           </form>
         </Form>
